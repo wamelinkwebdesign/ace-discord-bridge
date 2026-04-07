@@ -1,0 +1,18 @@
+{
+  "botToken": "YOUR_DISCORD_BOT_TOKEN",
+  "userId": "YOUR_DISCORD_USER_ID",
+  "guildId": "YOUR_DISCORD_GUILD_ID",
+  "workspace": "~/.claude-workspace",
+  "defaultModel": "claude-sonnet-4-6",
+  "opusModel": "claude-opus-4-6",
+  "maxTurnsSonnet": 5,
+  "maxTurnsOpus": 5,
+  "rateLimitMs": 3000,
+  "firstSendDelayMs": 2000,
+  "editIntervalMs": 1500,
+  "channels": {
+    "CHANNEL_ID_1": { "name": "general", "context": "General chat." },
+    "CHANNEL_ID_2": { "name": "work", "context": "Work-related discussions." },
+    "CHANNEL_ID_3": { "name": "projects", "context": "Side projects and builds." }
+  }
+}

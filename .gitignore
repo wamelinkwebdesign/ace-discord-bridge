@@ -1,0 +1,6 @@
+node_modules/
+config.json
+com.ace.discord-bridge.plist
+create-webhooks.mjs
+.DS_Store
+*.log
