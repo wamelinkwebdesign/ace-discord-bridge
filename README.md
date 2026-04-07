@@ -28,57 +28,32 @@ If you're using Claude Code (Pro/Max subscription) and want to access Claude fro
 
 ## Setup
 
-### 1. Clone and install
+### 1. Clone and configure
 
 ```bash
 git clone https://github.com/wamelinkwebdesign/ace-discord-bridge.git
 cd ace-discord-bridge
-npm install
-```
-
-### 2. Configure
-
-```bash
 cp config.example.json config.json
 ```
 
 Edit `config.json` with your values:
 
-- `botToken` - Your Discord bot token
+- `botToken` - Your Discord bot token ([create one here](https://discord.com/developers/applications))
 - `userId` - Your Discord user ID (the bot only responds to this user)
 - `guildId` - Your Discord server ID (for registering slash commands)
-- `workspace` - Path to a workspace directory (Claude Code will use this as its working directory)
+- `workspace` - Path to a workspace directory (Claude Code uses this as its working directory)
 - `channels` - Map of channel IDs to names and context descriptions
 
-### 3. Create a workspace
+### 2. Run setup
 
 ```bash
-mkdir -p ~/.claude-workspace
+chmod +x setup.sh
+./setup.sh
 ```
 
-Optionally add identity files that Claude will use:
-- `CLAUDE-SHORT.md` - Compact identity/personality instructions
-- `SOUL.md` - Longer identity definition
-- `USER.md` - Info about you for personalized responses
-- `MEMORY.md` - Persistent memory file
+This installs dependencies, verifies Claude Code is available, and optionally sets up auto-start on macOS via launchd.
 
-### 4. Run
-
-```bash
-npm start
-```
-
-### 5. Auto-start on macOS (optional)
-
-```bash
-cp com.ace.discord-bridge.example.plist ~/Library/LaunchAgents/com.ace.discord-bridge.plist
-```
-
-Edit the plist to update paths, then:
-
-```bash
-launchctl load ~/Library/LaunchAgents/com.ace.discord-bridge.plist
-```
+To run manually instead: `npm start`
 
 ## Commands
 

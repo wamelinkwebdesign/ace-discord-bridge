@@ -6,7 +6,7 @@
   "defaultModel": "claude-sonnet-4-6",
   "opusModel": "claude-opus-4-6",
   "maxTurnsSonnet": 5,
-  "maxTurnsOpus": 5,
+  "maxTurnsOpus": 10,
   "rateLimitMs": 3000,
   "firstSendDelayMs": 2000,
   "editIntervalMs": 1500,
