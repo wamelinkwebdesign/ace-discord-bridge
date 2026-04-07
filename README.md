@@ -31,7 +31,7 @@ If you're using Claude Code (Pro/Max subscription) and want to access Claude fro
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ace-discord-bridge.git
+git clone https://github.com/wamelinkwebdesign/ace-discord-bridge.git
 cd ace-discord-bridge
 npm install
 ```
