@@ -10,6 +10,13 @@
   "rateLimitMs": 3000,
   "firstSendDelayMs": 2000,
   "editIntervalMs": 1500,
+  "modelByChannel": {
+    "CHANNEL_ID_3": "claude-opus-4-6"
+  },
+  "channelRules": {
+    "projects": ["coding", "workflow"],
+    "_default": ["discord"]
+  },
   "channels": {
     "CHANNEL_ID_1": { "name": "general", "context": "General chat." },
     "CHANNEL_ID_2": { "name": "work", "context": "Work-related discussions." },
